@@ -1,0 +1,29 @@
+// 覆盖Element默认主题色
+$--color-primary: #1e3f2d;                // 主色改为深绿色
+$--button-primary-background-color: $--color-primary; // 同步按钮颜色
+
+// sidebar
+$menuText: #d1e7dd;                // 浅青白色文字
+$menuActiveText: #2ecc71;          // 鲜艳的激活绿色
+$subMenuActiveText: #f8f9fa;       // 纯白激活文字
+
+$menuBg: #1e3f2d;                  // 深森林绿背景
+$menuHover: #2a5741;               // 稍亮的悬停绿色
+
+$subMenuBg: #183824;               // 更深子菜单背景
+$subMenuHover: #245239;            // 子菜单悬停绿色
+
+$sideBarWidth: 210px;              // 保持原宽度不变
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}

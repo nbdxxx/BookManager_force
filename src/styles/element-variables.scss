@@ -1,0 +1,11 @@
+/* 覆盖Element默认变量 - 必须放在文件顶部 */
+$--color-primary: #1E3F2D !default;  // 深绿色主色
+$--button-primary-background-color: $--color-primary !default;
+$--button-primary-border-color: $--color-primary !default;
+
+/* 引入Element原始变量 */
+@import "~element-ui/packages/theme-chalk/src/common/var.scss";
+
+/* 可选：覆盖其他组件颜色 */
+$--color-success: #67C23A !default;
+$--color-warning: #E6A23C !default;
